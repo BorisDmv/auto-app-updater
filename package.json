@@ -1,0 +1,37 @@
+{
+  "name": "auto-app-updater",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "publish": [
+      { 
+        "provider": "github", 
+        "owner": "Boris", 
+        "repo": "auto-app-updater"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BorisDmv/auto-app-updater.git"
+  },
+  "author": "Boris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BorisDmv/auto-app-updater/issues"
+  },
+  "homepage": "https://github.com/BorisDmv/auto-app-updater#readme",
+  "devDependencies": {
+    "electron": "^21.2.2"
+  },
+  "dependencies": {
+    "electron-log": "^4.4.8",
+    "electron-updater": "^5.3.0"
+  }
+}
